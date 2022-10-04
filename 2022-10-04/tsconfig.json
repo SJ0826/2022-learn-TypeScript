@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+  "allowJs": true, // 자바스크립트 파일을 타입스크립트 파일로 인식해서 씀
+  "target": "ES5",
+  "outDir": "./built", // 타입스크립트 결과물이 들어갈 경로
+  "moduleResolution": "Node", // 프로미스를 인식시키기 위한 옵션
+  "lib": ["ES2015", "DOM", "DOM.Iterable"],
+  "noImplicitAny": true,
+  "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "include": ["./src/**/*"] // 프로젝트를 기준으로 해서 어떤 폴더를 대상으로 타입스크립트를 컴파일 시키는지
+}
